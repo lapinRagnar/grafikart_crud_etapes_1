@@ -1,0 +1,20 @@
+<h1>Bienvenue, Liste des articles</h1>
+
+<% @posts.each  do |post|%>
+
+    <h2><%= post.name %></h2>
+
+    <p>
+        <a href="<%= post_path(post.id) %>" class="btn btn-primary">Lire la suite</a>
+        <a href="<%= edit_post_path(post.id) %>" class="btn btn-info" >Editer l'article</a>
+    
+    </p>
+
+<% end %>
+
+
+<p>
+
+    <a href="<%= new_post_path %>" class="btn btn-success">Nouvel Article</a>
+
+</p>

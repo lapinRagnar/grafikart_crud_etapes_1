@@ -1,0 +1,19 @@
+<h1>Nouvel Article</h1>
+
+<%= form_for @post do |f| %>
+
+    <div class="form-group">
+        <label> Titre de l'article </label>
+        <%= f.text_field :name, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+        <label>Contenu de l'article</label>
+        <%= f.text_area :contect, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-secondary">Créer l'article</button>
+    </div>
+
+<% end %>
