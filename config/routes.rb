@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
 
-  get 'posts/index'
+  #get 'categories/index'
+  #get 'categories/show'
+  #get 'categories/update'
+  #get 'categories/destroy'
+  #get 'categories/new'
+  #get 'categories/edit'
+  #get 'posts/index'
+
   root to: 'home#home', as: 'home'
   resources :posts
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :categories
+  
 end
